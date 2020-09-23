@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faFileArchive } from '@fortawesome/free-solid-svg-icons';
+import { FaGithub, FaLinkedin, FaFileAlt, FaTwitter } from 'react-icons/fa';
 import '../styles/component/Header.scss';
 
 const Header = () => {
   return (
-    <Container className='header'>
+    <div>
       <div>
         <nav className='header_links'>
           <div className='header_links_groups'>
@@ -20,27 +18,29 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <Row className='container_Row'>
-        <Col className='container_Col'>
-          <Image className='profileImg' roundedCircle />
-          <h1>Yo soy Sebastian Gutierrez</h1>
-          <div className='social' id='social'>
-            <a href='https://twitter.com/sgutierrez24' className='twitter' target='blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faTwitter} className='twitter' size='lg' />
-            </a>
-            <a href='https://www.linkedin.com/in/sebastian-gutierrez-54b403148/' className='linkenid' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faLinkedin} className='linkedin' size='lg' />
-            </a>
-            <a href='https://github.com/Sgutierrezgf' className='github' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faGithubAlt} className='github' size='lg' />
-            </a>
-            <a href='https://github.com/Sgutierrezgf/Imagenes/blob/master/SebastianGutierrez.pdf' className='cv' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faFileArchive} className='cv' size='lg' />
-            </a>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+      <Container className='header'>
+        <Row className='container_Row'>
+          <Col className='container_Col'>
+            <Image className='profileImg' roundedCircle />
+            <h1>Yo soy Sebastian Gutierrez</h1>
+            <div className='social' id='social'>
+              <a href='https://twitter.com/sgutierrez24' className='twitter' target='blank' rel='noopener noreferrer'>
+                <FaTwitter className='social-icon' size='32' />
+              </a>
+              <a href='https://www.linkedin.com/in/sebastian-gutierrez-54b403148/' className='linkedin' target='_blank' rel='noopener noreferrer'>
+                <FaLinkedin className='social-icon' size='32' />
+              </a>
+              <a href='https://github.com/Sgutierrezgf' className='github' target='_blank' rel='noopener noreferrer'>
+                <FaGithub className='social-icon' size='32' />
+              </a>
+              <a href='https://github.com/Sgutierrezgf/Imagenes/blob/master/SebastianGutierrez.pdf' className='cv' target='_blank' rel='noopener noreferrer'>
+                <FaFileAlt className='social-icon' size='32' />
+              </a>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 

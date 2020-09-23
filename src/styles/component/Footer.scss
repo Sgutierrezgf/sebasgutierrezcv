@@ -7,4 +7,12 @@
     margin: 0 auto;
     padding: 0 24px;
     flex-direction: row;
+    background-color: rgba(37, 48, 59, 0.5);
+}
+.twitter,
+.linkedin,
+.github{
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
 }

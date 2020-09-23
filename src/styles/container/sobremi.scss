@@ -8,6 +8,17 @@
 }
 .container_mi_col{
     width: 25%;
+    /* position: relative; */
+    /* border-radius: 3px; */
+    /* width: 90%; */
+    padding: 25px;
+    max-width: 960px;
+    overflow-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px auto 30px;
+    top: 20px;
+    box-shadow: 0px 0px 0px 0px, rgba(0, 0, 0, 0.4) 0px 6px 12px;
+    border-radius: 25px;
 }
 .skills{
     display: grid;
@@ -18,7 +29,7 @@
   
   #skill { 
     list-style: none;
-    width: 500px;
+    width: 250px;
     margin: 0 auto 0;
     position: relative;
     line-height: 2em;

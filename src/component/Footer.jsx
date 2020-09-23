@@ -1,21 +1,20 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import '../styles/component/Footer.scss';
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <h1>Sebastian Gutierrez</h1>
+      <h3>segut10@gmial.com</h3>
       <div>
         <a href='https://twitter.com/sgutierrez24' className='twitter' target='blank' rel='noopener noreferrer'>
-          <FontAwesomeIcon icon={faTwitter} className='twitter' size='lg' />
+          <FaTwitter className='social-icon' size='32' />
         </a>
-        <a href='https://www.linkedin.com/in/sebastian-gutierrez-54b403148/' className='linkenid' target='_blank' rel='noopener noreferrer'>
-          <FontAwesomeIcon icon={faLinkedin} className='linkedin' size='lg' />
+        <a href='https://www.linkedin.com/in/sebastian-gutierrez-54b403148/' className='linkedin' target='_blank' rel='noopener noreferrer'>
+          <FaLinkedin className='social-icon' size='32' />
         </a>
         <a href='https://github.com/Sgutierrezgf' className='github' target='_blank' rel='noopener noreferrer'>
-          <FontAwesomeIcon icon={faGithubAlt} className='github' size='lg' />
+          <FaGithub className='social-icon' size='32' />
         </a>
       </div>
     </footer>

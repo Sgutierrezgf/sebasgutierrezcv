@@ -1,0 +1,19 @@
+.container_info_row{
+    display: flex;
+    margin: 50px;
+}
+
+.container_mi_col{
+    display: grid;
+    width: 60%;
+}
+.container_mi_col2{
+    display: grid;
+}
+.vl{
+    border-left: 6px solid black;
+    height: 190%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FaGithub, FaLinkedin, FaFileAlt, FaTwitter } from 'react-icons/fa';
 import '../styles/component/Header.scss';
@@ -7,17 +6,6 @@ import '../styles/component/Header.scss';
 const Header = () => {
   return (
     <div>
-      <div>
-        <nav className='header_links'>
-          <div className='header_links_groups'>
-            <Link className='link' to='/'>Sobre Mi</Link>
-            <Link className='link' to='/academia'>Estudios</Link>
-            <Link className='link' to='/Skill'>Habilidades</Link>
-            <Link className='link' to='/experiencia'>Experiencia</Link>
-            <Link className='link' to='/interes'>Interes</Link>
-          </div>
-        </nav>
-      </div>
       <Container className='header'>
         <Row className='container_Row'>
           <Col className='container_Col'>

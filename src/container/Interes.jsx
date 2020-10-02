@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../styles/container/interes.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilm, faBookOpen, faBicycle, faGamepad, faDrumstickBite, faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import '../styles/container/interes.scss';
 
 const Interes = () => (
   <div className='Interes'>
     <h1>Interes y hobbies</h1>
     <Container className='container_interes'>
-      <Row>
+      <Row className='rowInteres'>
         <Col sm={4} className='interes_col'>
           <FontAwesomeIcon icon={faFilm} size='3x' className='fontCine' />
           <div>

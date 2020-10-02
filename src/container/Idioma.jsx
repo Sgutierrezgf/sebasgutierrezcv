@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../styles/container/habilidades.scss';
 
-const Habilidades = () => (
+const Idioma = () => (
   <div className='Habilidades'>
     <Container className='container_habilidad'>
       <Row className='container_habilidad_row'>
@@ -66,4 +65,4 @@ const Habilidades = () => (
     </Container>
   </div>
 );
-export default Habilidades;
+export default Idioma;

@@ -7,13 +7,11 @@
     display: grid;
     width: 60%;
 }
-.container_mi_col2{
-    display: grid;
-}
 .vl{
     border-left: 6px solid black;
-    height: 190%;
+    height: 155%;
     position: absolute;
     left: 50%;
-    margin-left: -3px;
+    /* margin-left: -3px; */
+    top: 55%;
 }

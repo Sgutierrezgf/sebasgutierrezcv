@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Layout from '../component/Layout';
 import Info from '../container/Info';
+import Portafolio from '../container/Portafolio';
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Info />
+        <Switch>
+          <Route exact path='/' component={Info} />
+          <Route exact path='/Portafolio' component={Portafolio} />
+        </Switch>
       </Layout>
     </BrowserRouter>
   );

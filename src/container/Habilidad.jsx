@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../styles/container/habilidades.scss';
 
 const Habilidad = () => (
   <div className='Habilidades'>
@@ -10,7 +11,7 @@ const Habilidad = () => (
           <div className='skillTable'>
             <ul id='skill'>
               <li>
-                <span className='bar html-css' />
+                <span className='bar html'/>
                 <h3>Html5</h3>
               </li>
               <li>
@@ -22,31 +23,24 @@ const Habilidad = () => (
                 <h3>React</h3>
               </li>
               <li>
-                <span className='bar Design' />
-                <h3>UX // UI</h3>
-              </li>
-            </ul>
-          </div>
-        </Col>
-        <Col className='container_mi_col'>
-          <h1>+ Conocimientos</h1>
-          <div className='skillTable'>
-            <ul id='skill'>
-              <li>
-                <span className='bar html-css' />
-                <h3>Css // Scss</h3>
+                <span className='bar GIT' />
+                <h3>GIT, GITHUB</h3>
               </li>
               <li>
-                <span className='bar Javascript' />
+                <span className='bar style' />
+                <h3>CSS, SASS</h3>
+              </li>
+              <li>
+                <span className='bar Webpack' />
                 <h3>Webpack</h3>
               </li>
               <li>
-                <span className='bar React' />
+                <span className='bar Api' />
                 <h3>Api rest</h3>
               </li>
               <li>
-                <span className='bar Design' />
-                <h3>Npm</h3>
+                <span className='bar NPM' />
+                <h3>NPM</h3>
               </li>
             </ul>
           </div>

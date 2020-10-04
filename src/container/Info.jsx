@@ -6,7 +6,6 @@ import Interes from './Interes';
 import Idioma from './Idioma';
 import Skill from './Habilidad';
 import Experiencia from './Experiencia';
-import Contacto from './Contacto';
 import '../styles/container/info.scss';
 
 const Info = () => (
@@ -21,7 +20,6 @@ const Info = () => (
         </Col>
         <div className='vl' />
         <Col className='container_mi_col2'>
-          <Contacto />
           <Skill />
           <Idioma />
         </Col>

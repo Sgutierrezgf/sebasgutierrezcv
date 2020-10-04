@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FaGithub, FaLinkedin, FaFileAlt, FaTwitter } from 'react-icons/fa';
 import '../styles/component/Header.scss';
@@ -28,6 +29,10 @@ const Header = () => {
           </Col>
         </Row>
       </Container>
+      <div className='Botones'>
+        <Link to='/Portafolio' className='porta_boton'>Portafolio</Link>
+        <button type='button'>Oscuro</button>
+      </div>
     </div>
   );
 };
